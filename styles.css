@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl; 
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#main h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#main p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#photos {
+    padding: 20px;
+    text-align: center;
+}
+
+#photos .photos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#photos .photos-container img {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+/* تحسين الاستجابة للموقع على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    #main h1 {
+        font-size: 28px;
+    }
+
+    #main h2 {
+        font-size: 22px;
+    }
+
+    #main p {
+        font-size: 16px;
+    }
+
+    #photos .photos-container img {
+        width: 100%; /* جعل الصور تأخذ العرض الكامل على الجوال */
+        height: auto;
+    }
+
+    #footer {
+        padding: 10px;
+    }
+}
